@@ -1,0 +1,34 @@
+<ion-header >     
+  <ion-navbar>
+      <img src="assets/imgs/twitter.png"/>      
+    <ion-title > 
+         <!-- Criptografar -->
+    </ion-title>   
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page3" >
+  <ion-label id="titulo">CRIPTOGRAFAR</ion-label>
+  <div class="spacer" style="width:300px;height:80px;" id="criptografar-spacer4" ></div>
+  <form id="criptografar-form5">
+    <ion-item id="criptografar-input8">
+      <ion-label>
+        Código
+      </ion-label>
+      <ion-input type="text" placeholder="" #codigo></ion-input>
+    </ion-item>
+    <div class="spacer" style="width:300px;height:39px;" id="criptografar-spacer5"></div>
+    <ion-item id="criptografar-input9">
+      <ion-label>
+        Chave
+      </ion-label>
+      <ion-input type="number" placeholder="" #chave></ion-input>
+    </ion-item>
+  </form>
+  <h4 id="criptografar-heading3" style="color:#000000;" #resultado>
+  {{Resultado}}
+  </h4>
+  <div class="spacer" style="width:300px;height:138px;" id="criptografar-spacer6"></div>
+  <button id="criptografar-button2" ion-button color="assertive" block   (click)="Criptografa(codigo.value.toLowerCase(), chave.value)">
+   OK 
+  </button>
+</ion-content>

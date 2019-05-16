@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+      <img src="assets/imgs/twitter.png"/>  
+    <ion-title>
+      <!-- Descriptografar -->
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page2">
+    <ion-label id="titulo">DESCRIPTOGRAFAR</ion-label>
+  <div class="spacer" style="width:300px;height:80px;" id="descriptografar-spacer1"></div>
+  <form id="descriptografar-form3">
+    <ion-item id="descriptografar-input4">
+      <ion-label>
+        Código
+      </ion-label>
+      <ion-input type="text" placeholder="" #code></ion-input>
+    </ion-item>
+    <div class="spacer" style="width:300px;height:39px;" id="descriptografar-spacer2"></div>
+    <ion-item id="descriptografar-input6">
+      <ion-label>
+        Chave
+      </ion-label>
+      <ion-input type="number" placeholder="" #key></ion-input>
+    </ion-item>
+  </form>
+  <h4 id="descriptografar-heading2" >
+     {{rtd}}
+  </h4>
+  <div class="spacer" style="width:300px;height:138px;" id="descriptografar-spacer3"></div>
+  <button id="descriptografar-button1" ion-button color="positive" block (click)="CaesarDecryption(code.value.toLowerCase(), key.value)">
+    OK
+  </button>
+</ion-content>
